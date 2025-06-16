@@ -7,7 +7,7 @@ function Cell({ letter, status }) {
   return <span className={className}>{letter}</span>;
 }
 
-function Guess({ guess, answer }) {
+function Guess({ guess, answer, handleGameStatus }) {
   const checkGuessResults = checkGuess(guess, answer);
 
   return (

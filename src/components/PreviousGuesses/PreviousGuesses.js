@@ -12,7 +12,11 @@ function PreviousGuesses({ guesses, answer }) {
     </div>*/
     <div className="guess-results">
       {range(NUM_OF_GUESSES_ALLOWED).map((num, index) => (
-        <Guess key={index} guess={guesses[index]} answer={answer}></Guess>
+        <Guess
+          key={index}
+          guess={guesses[index]}
+          answer={answer}
+        ></Guess>
       ))}
     </div>
   );
